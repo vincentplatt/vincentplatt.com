@@ -1,15 +1,10 @@
-/// <reference lib="WebWorker" />
-
-export type { };
-declare const self: ServiceWorkerGlobalScope;
-
 const VERSION = "v1";
 
 self.addEventListener("install", function(event) {
     event.waitUntil(
         caches.open(VERSION).then(function(cache) {
             return cache.addAll([
-                "/index.js", // vtodo
+                "/akashi.ttf", // vtodo
             ]);
         })
     );
