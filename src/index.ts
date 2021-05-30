@@ -26,3 +26,9 @@ window.onload = () => {
         runConciseAnimation();
     }
 };
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js", { scope: "/" }).catch(function(error) {
+        console.error("Service worker failed: " + error);
+    });
+}
