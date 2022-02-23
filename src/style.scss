@@ -8,15 +8,15 @@ $green2: #66cd17;
 $green3: #41840f;
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('./fonts/ubuntu-regular.ttf') format('truetype');
+  font-family: Ubuntu;
+  src: url("./fonts/ubuntu-regular.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Akashi';
-  src: url('./fonts/akashi.ttf') format('truetype');
+  font-family: Akashi;
+  src: url("./fonts/akashi.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -66,7 +66,7 @@ a:hover {
 body {
   background-color: $purple;
   color: $grey;
-  font-family: 'Ubuntu', Tahoma, Geneva, sans-serif;
+  font-family: Ubuntu, Tahoma, Geneva, sans-serif;
   font-size: 130%;
   min-height: 100%;
   width: 100%;
@@ -144,11 +144,11 @@ ul:not(.hide) {
 
 h1 {
   color: $orange;
-  font-family: 'Akashi', 'impact', sans-serif;
+  font-family: Akashi, impact, sans-serif;
   font-weight: 400;
   font-size: 80px;
   display: block;
-  margin: 50px 0 0 0;
+  margin: 50px 0 0;
   outline: 0;
   position: relative;
   z-index: 5;
@@ -273,15 +273,8 @@ div#skills {
 ::selection {
   -webkit-font-smoothing: antialiased;
   color: $purple;
-  text-shadow: none;
   background: $white;
-}
-
-::-moz-selection {
-  -webkit-font-smoothing: antialiased;
-  color: $purple;
   text-shadow: none;
-  background: $white;
 }
 
 .zeroFont {
@@ -382,7 +375,7 @@ div#skills {
 
   body,
   main {
-    min-height: auto;
+    min-height: initial;
   }
 
   body {
@@ -390,7 +383,7 @@ div#skills {
   }
 
   main {
-    padding: 20px 0 0 0;
+    padding: 20px 0 0;
   }
 
   #contact li a {
