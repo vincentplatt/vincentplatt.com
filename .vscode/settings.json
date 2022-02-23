@@ -13,4 +13,10 @@
     "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
     "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "stylelint.validate": [
+        "css",
+        "scss"
+    ],
+    "stylelint.enable": true,
+    "stylelint.configFile": ".stylelintrc",
 }
